@@ -1,10 +1,13 @@
 import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.Random;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-class MyFrame extends JFrame {
+class MyFrame extends JFrame  {
 	public MyFrame() {
 		JPanel pnl = new JPanel();
 		pnl.setBackground(new Color(20,150,20));
@@ -15,6 +18,20 @@ class MyFrame extends JFrame {
 		add(pnl);
 		pnl.add(btn);
 		pnl.add(btn2);
+		
+		btn.addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Random rd = new Random();
+				int r = rd.nextInt(100);
+				int g = rd.nextInt(100);
+				int b = rd.nextInt(100);
+				pnl.setBackground(new Color(30, 20, 60));
+			}
+		
+			
+		});
 		setSize(500, 500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
