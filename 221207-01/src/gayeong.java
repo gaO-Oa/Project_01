@@ -5,6 +5,7 @@ public class gayeong {
 		// TODO Auto-generated method stub
 		System.out.println("가영조장");
 		System.out.println("가영안녕");
+		System.out.println("머고머고");
 	}
 
 }
