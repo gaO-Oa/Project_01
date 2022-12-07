@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -5,7 +7,9 @@ import javax.swing.JPanel;
 class MyFrame extends JFrame {
 	public MyFrame() {
 		JPanel pnl = new JPanel();
-		JButton btn = new JButton();
+		pnl.setBackground(new Color(20,20,20));
+		JButton btn = new JButton("첫번째버튼");
+		
 		add(pnl);
 		pnl.add(btn);
 		setSize(500, 500);
@@ -13,9 +17,6 @@ class MyFrame extends JFrame {
 		setVisible(true);
 	}
 }
-
-
-
 
 public class Gui {
 	public static void main(String[] args) {
