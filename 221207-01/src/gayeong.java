@@ -3,7 +3,7 @@ public class gayeong {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		System.out.println("이렇게된이상 써보자 ㅎㅎ");
 		System.out.println("이은진");
 
 		System.out.println("정혜인");
