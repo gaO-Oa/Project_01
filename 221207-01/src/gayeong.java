@@ -8,7 +8,7 @@ public class gayeong {
 		System.out.println("머고머고");
 		System.out.println("응애 아기헤니 등장");
 		System.out.println("하나더 추가");
-		System.out.println("e다시다시");
+		System.out.println("e다시");
 	}
 
 }
